@@ -1,0 +1,6 @@
+include 'fxml-sample'
+
+project(':fxml-sample').projectDir = "$rootDir/src/examples/fxml" as File
+
+rootProject.name = 'Toaster'
+

@@ -1,0 +1,35 @@
+= Toaster
+
+Provides a small set of simple FX Panes allowing customizable toast
+notifications in JavaFX GUI applications.
+
+Toaster can be easily added to any project by simply wrapping whatever panes you
+like with a `NotificationPane` using FXML or raw Java.
+
+== Examples
+
+.Sample FXML
+[source,xml]
+----
+<NotificationPane [...] fx:id="noteStack">
+  <VBox>
+    <Button text="Add Note" onAction="#addNote" />
+  </VBox>
+</NotificationPane>
+----
+
+.Sample Controller
+[source,java]
+----
+public class Controller
+{
+  @FXML
+  private NotificationPane noteStack;
+
+  @FXML
+  private void addNote( final Event ignored )
+  {
+    noteStack.notify(new Notification("Hello World"));
+  }
+}
+----
