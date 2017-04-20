@@ -8,6 +8,10 @@ like with a `NotificationPane` using FXML or raw Java.
 
 == Examples
 
+
+https://github.com/excelmicro/FX-Toaster/tree/master/src/examples/fxml/src/main[Working Sample]
+
+
 .Sample FXML
 [source,xml]
 ----
