@@ -72,4 +72,14 @@ public class NotificationPane extends StackPane
   {
     stack.notify(note, in, show, out, col);
   }
+
+  /**
+   * Returns the internal anchor stack notifications are appended to.
+   *
+   * @return NotificationAnchorStack
+   */
+  public NotificationAnchorStack getStack()
+  {
+    return stack;
+  }
 }

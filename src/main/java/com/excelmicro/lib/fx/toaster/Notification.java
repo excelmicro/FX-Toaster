@@ -160,4 +160,14 @@ public class Notification extends VBox
   {
     return body.getStyle();
   }
+
+  /**
+   * Returns the header label
+   *
+   * @return header Label
+   */
+  public Label getHeader()
+  {
+    return header;
+  }
 }
